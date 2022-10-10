@@ -20,14 +20,14 @@ export const Profile = ({
   return (
     <Box
       bg="backgroundPrimary"
-      pt="32px"
       width="300px"
-      height="400px"
+      height="480px"
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
       border="normal"
-      mb="32px"
+      mb="128px"
+      pt="16px"
     >
       <UserAvatar src={avatar} alt="User avatar" />
       <UserName>{username}</UserName>

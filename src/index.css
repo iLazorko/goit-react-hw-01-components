@@ -15,8 +15,37 @@ code {
     monospace;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 
+ ${'' /* switch (index) {
+      case 0:
+        return theme.colors.yellowGreen;
+      case 1:
+        return theme.colors.lightBlue;
+      case 2:
+        return theme.colors.violet;
+      case 3:
+        return theme.colors.pink;
+      case 4:
+        return theme.colors.bluegreen; */

@@ -1,22 +1,20 @@
-/**
- * <ul class="friend-list">
-  <!-- Произвольное кол-во FriendListItem -->
-</ul>
-
-Описание компонента FriendListItem
-Компонент должен принимать несколько пропов:
-
-avatar - ссылка на аватар
-name - имя друга
-isOnline - буль сигнализирующий о состоянии друга, в сети или нет.
-В зависимости от пропа isOnline, должен меняться цвет фона span.status. Это можно сделать через разный CSS-класс или Styled Components.
- */
-
 import { FriendListItem } from './FriendListItem';
-import friends from '../../json/friends.json';
+import { Box } from '../Box';
 
-export const FriendList = () => (
-  <ul>
+export const FriendList = ({ friends }) => (
+  <Box
+    bg="backgroundPrimary"
+    display="flex"
+    flexDirection="column"
+    justifyContent="start"
+    alignItems="center"
+    width="250px"
+    gridGap={4}
+    position="absolute"
+    top="16px"
+    left="450px"
+    as="ul"
+  >
     <FriendListItem friends={friends} />
-  </ul>
+  </Box>
 );

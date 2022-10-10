@@ -6,17 +6,11 @@ export const theme = {
     textSecondary: '#7d8082',
     backgroundPrimary: '#fff',
     backgroundSecondary: '#e7ecf1',
-    blue: '#50c4f7',
-    violet: '#a43cf1',
-    pink: '#e64c66',
-    bluegreen: '#20b8c5',
+    statColors: ['#50c4f7', '#a43cf1', '#e64c66', '#20b8c5', '#37a444'],
     red: '#fe5252',
     green: '#50ad54',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
-  fonts: {
-    body: 'roboto, sans-serif',
-  },
   fontSizes: {
     xs: '12px',
     s: '14px',

@@ -1,12 +1,26 @@
-import { TransactionTableHead } from './TransactionTableHead';
 import { TransactionTableBody } from './TransactionTableBody';
-import transaction from '../../json/transactions.json';
+import { Box } from '../Box';
+import { Table, TableHead } from './TransactionHistory.styled';
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({ transaction }) => {
   return (
-    <table>
-      <TransactionTableHead />
-      <TransactionTableBody items={transaction} />
-    </table>
+    <Box
+      bg="backgroundPrimary"
+      width="700px"
+      position="absolute"
+      top="16px"
+      left="750px"
+    >
+      <Table>
+        <thead>
+          <tr>
+            <TableHead>Type</TableHead>
+            <TableHead>Amount</TableHead>
+            <TableHead>Currency</TableHead>
+          </tr>
+        </thead>
+        <TransactionTableBody items={transaction} />
+      </Table>
+    </Box>
   );
 };

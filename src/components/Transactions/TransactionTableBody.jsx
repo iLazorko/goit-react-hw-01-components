@@ -1,15 +1,17 @@
+import { TableColumn, TableBody } from './TransactionTableBody.styled';
+
 export const TransactionTableBody = ({ items }) => {
   return (
-    <tbody>
-      {items.map(({ type, amount, currency, id }) => {
+    <TableBody>
+      {items.map(({ type, amount, currency, id }, index) => {
         return (
           <tr key={id}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <TableColumn>{type}</TableColumn>
+            <TableColumn>{amount}</TableColumn>
+            <TableColumn>{currency}</TableColumn>
           </tr>
         );
       })}
-    </tbody>
+    </TableBody>
   );
 };
