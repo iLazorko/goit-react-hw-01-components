@@ -1,6 +1,7 @@
 import { TransactionTableBody } from './TransactionTableBody';
 import { Box } from '../Box';
 import { Table, TableHead } from './TransactionHistory.styled';
+import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ transaction }) => {
   return (
@@ -9,7 +10,7 @@ export const TransactionHistory = ({ transaction }) => {
       width="700px"
       position="absolute"
       top="16px"
-      left="750px"
+      left="800px"
     >
       <Table>
         <thead>
@@ -23,4 +24,15 @@ export const TransactionHistory = ({ transaction }) => {
       </Table>
     </Box>
   );
+};
+
+TransactionHistory.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currensy: PropTypes.string.isRequired,
+    })
+  ),
 };

@@ -1,7 +1,6 @@
 export const theme = {
   colors: {
-    black: '#000',
-    white: '#fff',
+    textWhite: '#fff',
     text: '#2a2a2a',
     textSecondary: '#7d8082',
     backgroundPrimary: '#fff',
@@ -22,16 +21,10 @@ export const theme = {
     normal: 400,
     bold: 700,
   },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.125,
-  },
   borders: {
-    none: 'none',
     normal: '1px solid',
   },
   radii: {
-    none: '0',
     normal: '4px',
     round: '50%',
   },
