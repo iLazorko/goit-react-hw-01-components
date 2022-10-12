@@ -17,7 +17,14 @@ export const FriendList = ({ friends }) => {
       left="450px"
       as="ul"
     >
-      <FriendListItem friends={friends} />
+      {friends.map(({ id, avatar, name, isOnline }) => (
+        <FriendListItem
+          key={id}
+          isOnline={isOnline}
+          avatar={avatar}
+          name={name}
+        />
+      ))}
     </Box>
   );
 };
