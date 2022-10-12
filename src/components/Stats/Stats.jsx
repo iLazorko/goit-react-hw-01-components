@@ -7,7 +7,7 @@ export const Stats = ({ title, data }) => {
   return (
     <Box
       bg="backgroundPrimary"
-      width="400px"
+      width="685px"
       height="128px"
       display="flex"
       flexDirection="column"
